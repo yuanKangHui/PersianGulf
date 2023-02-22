@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script src="one.js"></script>
+<script>
+    //弹窗输出
+    alert("Hello,Jany.\nThis is you choice,right?");
+
+    document.write("植入页面\b");
+
+    /**
+     * 控制台打印
+     */
+    document.write("日志\b");
+    document.write("通知\b");
+    document.write("警告\b");
+    document.write("错误\b");
+
+    var a;
+    var b = null;
+    document.write(typeof 123 + "<br>");
+    document.write(typeof "123" + "<br>");
+    document.write(typeof true + "<br>");
+    document.write(typeof a + "<br>");
+    document.write(typeof b + "<br>");
+
+    a = 123;
+    a = a.toString();
+    document.write(a + "<br>");
+    document.write(typeof a + "<br>");
+
+    b = 123;
+    b = String(b);
+    document.write(b + "<br>");
+    document.write(typeof b + "<br>")
+
+    var c = undefined;
+    c = String(c);
+    document.write(c + "<br>");
+    document.write(typeof c + "<br>")
+
+    var d = null;
+    d = String(d);
+    document.write(d + "<br>");
+    document.write(typeof d + "<br>");
+
+    a = parseInt(a);
+    document.write(a + "<br>");
+    document.write(typeof a + "<br>");
+
+    var e = "1.1145";
+    e = parseFloat(e);
+    document.write(e + "<br>");
+    document.write(typeof e + "<br>")
+
+    {
+        var f = null;
+        f = Number(f);
+        document.write(f + "<br>")
+        document.write(typeof f + "<br>")
+    }
+
+    var g = undefined;
+    g = Number(g);
+    document.write(g + "<br>");
+    document.write(typeof g + "<br>")
+
+    var time = 12;
+    result = (time===12)?"吃午饭的时间，哦哦哦哦哦！！！":"还没到吃午饭时间，呜呜呜（；´д｀）ゞ";
+    document.write(result + "<br>")
+
+    var jimi=5;
+    if(jimi < 10){
+        document.write("jimi has a small dick.<br>");
+    }
+
+    switch (jimi) {
+        case 5:
+            document.write("jimi is a coke.<br>");
+            break;
+        case 10:
+            document.write("jimi has a huge dick.<br>");
+            break;
+        default:
+            document.write("错误的数据类型。");
+    }
+
+    while(jimi >= 10){
+        document.write("jimi should to be a good man.<br>");
+        jimi++;
+    }
+
+    do{
+        document.write("jimi should to be a experienced man.<br>");
+    }while(jimi >= 18)
+</script>
+
+<body>
+<a>假设y=999，计算x = y + 1，那么x是多少？</a>
+<button onclick="addFunction()">CLICK TO COUNT</button>
+<a id="demo"></a>
+</body>
+</html>
